@@ -1,0 +1,25 @@
+{
+  "name": "scannerplugin",
+  "version": "1.0.0",
+  "description": "This is cordova plugin for Barcodes/QR codes which scan multiple codes in single shot",
+  "cordova": {
+    "id": "cordova-plugin-scanner",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dalu547/ScannerPlugin.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "scanner",
+    "dalu547"
+  ],
+  "author": "Dalayya Kalla",
+  "license": "ISC"
+}

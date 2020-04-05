@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-scanner" version="1.0.0" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>ScannerPlugin</name>
+
+    <!-- the js-module is described the js file which will be our bridge to the native code
+    the src attribute is the path of the js file
+    the clobbers target is the json path where our module will be added to the window object -->
+    <js-module name="ScannerPlugin" src="www/ScannerPlugin.js">
+        <clobbers target="ScannerPlugin" />
+    </js-module>
+
+    <!-- details of our Android related files
+    source-file is where our java file takes place in the plugin
+    target-dir is the path where this file will be copied when you install this plugin -->
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="ScannerPlugin">
+                <param name="android-package" value="cordova.plugin.scanner.ScannerPlugin"/>
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+        <source-file src="src/android/ScannerPlugin.java" target-dir="src/cordova/plugin/scanner/ScannerPlugin"/>
+    </platform>
+
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="ScannerPlugin">
+                <param name="ios-package" value="ScannerPlugin" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/ScannerPlugin.m" />
+    </platform>
+
+</plugin>
