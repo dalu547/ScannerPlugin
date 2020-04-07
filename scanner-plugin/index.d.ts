@@ -29,7 +29,7 @@ export declare class ScannerPluginOriginal extends IonicNativePlugin {
      */
     functionName(arg1: string, arg2: number): Promise<any>;
     coolMethod(arg1: any): Promise<string>;
+    openScanner(): Promise<any>;
 }
 
 export declare const ScannerPlugin: ScannerPluginOriginal;
-
