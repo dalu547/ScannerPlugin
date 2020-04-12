@@ -60,7 +60,7 @@ public class ScannerPlugin extends CordovaPlugin {
                 public void run() 
                 {
 
-                    Intent intent = new Intent(that.cordova.getActivity().getBaseContext(), MainActivity.class);
+                    Intent intent = new Intent(that.cordova.getActivity().getBaseContext(), TestActivity.class);
                     that.cordova.getActivity().startActivity(intent);
 
                 }
