@@ -18,6 +18,7 @@
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="ScannerPlugin">
                 <param name="android-package" value="cordova.plugin.scanner.ScannerPlugin"/>
+                <param name="onload" value="true" />
             </feature>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml" />
@@ -27,14 +28,17 @@
         <source-file src="src/android/MainActivity.java" target-dir="src/cordova/plugin/scanner/ScannerPlugin"/>
         <source-file src="src/android/activity_main.xml" target-dir="res/layout" />
         <source-file src="src/android/camera_theme.xml" target-dir="res/values" />
+        <source-file src="src/android/TestActivity.java" target-dir="src/cordova/plugin/calculator"/>
+        <source-file src="src/android/activity_test.xml" target-dir="res/layout" />
 
-         <!-- add all dependencies,.aar files or lib/sdk here-->
+        <!-- add all dependencies,.aar files or lib/sdk here-->
         <framework src="com.android.support:support-v4:23.+" />
         <framework src="com.android.support:appcompat-v7:27.1.1" />
         <framework src="com.google.android.gms:play-services-vision:15.0.2" />
+        <framework src="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.31" />
         <framework src="src/android/barcode-reader" custom="true" />
-
-        <!-- add all permissions here-->
+        
+         <!-- add all permissions here-->
          <config-file target="AndroidManifest.xml" parent="/manifest">
            <uses-permission android:name="android.permission.CAMERA"/>
            <uses-permission android:name="android.permission.FLASHLIGHT"/>
