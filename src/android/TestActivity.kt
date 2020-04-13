@@ -13,10 +13,10 @@ class TestActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // setContentView(R.layout.activity_test)
+        setContentView(R.layout.activity_test)
 
         package_name = getApplication().getPackageName();
-        setContentView(getApplication().getResources().getIdentifier("activity_test", "layout", package_name));
+        // setContentView(getApplication().getResources().getIdentifier("activity_test", "layout", package_name));
 
 
         Toast.makeText(this,"TestActivity",Toast.LENGTH_SHORT).show();
