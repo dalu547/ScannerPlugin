@@ -33,7 +33,7 @@
         <source-file src="src/android/MainActivity.java" target-dir="src/cordova/plugin/scanner/ScannerPlugin"/>
         <source-file src="src/android/activity_main.xml" target-dir="res/layout" />
         <source-file src="src/android/camera_theme.xml" target-dir="res/values" />
-        <source-file src="src/android/TestActivity.java" target-dir="src/cordova/plugin/scanner/ScannerPlugin"/>
+        <source-file src="src/android/TestActivity.kt" target-dir="src/cordova/plugin/scanner/ScannerPlugin"/>
         <source-file src="src/android/activity_test.xml" target-dir="res/layout" />
 
         <!-- add all dependencies,.aar files or lib/sdk here-->
