@@ -39,10 +39,13 @@
         <!--add all source files here-->
         <source-file src="src/android/ScannerPlugin.java" target-dir="src/cordova/plugin/scanner/ScannerPlugin"/>
         <source-file src="src/android/MainActivity.java" target-dir="src/cordova/plugin/scanner/ScannerPlugin"/>
-        <source-file src="src/android/TestActivity.kt" target-dir="src/cordova/plugin/scanner/ScannerPlugin"/>
+        <source-file src="src/android/TestActivity.kt" target-dir="app/src/main/kotlin/cordova/plugin/scanner/ScannerPlugin"/>
         <source-file src="src/android/activity_main.xml" target-dir="res/layout" />
         <source-file src="src/android/camera_theme.xml" target-dir="res/values" />
         <source-file src="src/android/activity_test.xml" target-dir="res/layout" />
+
+        <!-- src/[package folders]
+        app/src/main/kotlin/[package folders]/[some class].kt -->
 
         <!-- add all dependencies,.aar files or lib/sdk here-->
         <framework src="com.android.support:support-v4:23.+" />
