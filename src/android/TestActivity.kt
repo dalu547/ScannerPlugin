@@ -7,7 +7,8 @@ import android.widget.Toast
 
 class TestActivity : AppCompatActivity() {
 
-    String package_name = ""; 
+    
+    var package_name:String?="";
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
