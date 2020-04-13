@@ -14,7 +14,12 @@
     <!-- details of our Android related files
     source-file is where our java file takes place in the plugin
     target-dir is the path where this file will be copied when you install this plugin -->
-    <platform name="android">
+    <platform name="android" kotlin="1.2.50">
+
+    <framework src="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.31" />
+    <apply-plugin>kotlin-android-extensions</apply-plugin>
+    <apply-plugin>kotlin-kapt</apply-plugin>
+
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="ScannerPlugin">
                 <param name="android-package" value="cordova.plugin.scanner.ScannerPlugin"/>
@@ -35,7 +40,7 @@
         <framework src="com.android.support:support-v4:23.+" />
         <framework src="com.android.support:appcompat-v7:27.1.1" />
         <framework src="com.google.android.gms:play-services-vision:15.0.2" />
-        <framework src="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.31" />
+        <!-- <framework src="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.31" /> -->
         <framework src="src/android/barcode-reader" custom="true" />
         
          <!-- add all permissions here-->
